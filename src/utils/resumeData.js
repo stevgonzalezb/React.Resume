@@ -10,7 +10,7 @@ export default {
     name: 'Steven González',
     title: 'Software Engineer',
     resume: '',
-    about: 'I am a software engineer with more than 6 years of experience in Software Industry, where I have worked with different parts of the software arquitecture such as data bases (SQL Server, MySql, Oracle), backend (.Net core, Node JS, Python), frontend (React, Vanilla JS, Web components) and even over the network where software runs. I consider myself passionate about learning and understanding new business models to find the best way technology can help to improve the company processes and always giving my value added in every project or task that I am responsible of.',
+    about: 'I am a software engineer with more than 6 years of experience in the software industry, where I have worked with different parts of software architecture such as databases (SQL Server, MySql, NoSQL), backend (.Net core, Node JS, Python), frontend (React, Vanilla JS, Web components). I consider myself passionate about learning and understanding new business to find the best way technology can help us on a daily basis and always giving my added value in every project or task I am responsible for. I also enjoy hiking, dancing and having a good time with my little friend Atenea. 😸',
     email: 'stevengonzalez957@gmail.com',
     phone: '+506 8634-7798',
     address: 'Alajuela, Costa Rica',
