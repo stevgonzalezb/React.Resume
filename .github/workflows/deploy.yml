@@ -42,9 +42,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with: 
           name: github-pages
-          path: |
-            build
-            !build/**/*.md
+          path: artifact.tar
   # Single deploy job since we're just deploying
   deploy:
     environment:
