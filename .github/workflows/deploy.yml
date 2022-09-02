@@ -37,7 +37,7 @@ jobs:
           npm ci
           npm run build
       - name: Tar files 
-        run: tar -cvf artifact.tar build
+        run: tar -cvf artifact.tar build/*
       - name: Save build files 🌐
         uses: actions/upload-artifact@v3
         with: 
