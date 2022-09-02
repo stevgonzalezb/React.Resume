@@ -36,6 +36,13 @@ jobs:
         run: |
           npm ci
           npm run build
+      - name: Save build files 🌐
+        uses: actions/upload-artifact@v3
+        with: 
+          name: build-whithout-markdown
+          path: |
+            build
+            !build/**/*.md
   # Single deploy job since we're just deploying
   deploy:
     environment:
