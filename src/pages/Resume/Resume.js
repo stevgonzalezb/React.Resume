@@ -21,13 +21,13 @@ const Resume = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [showMore, setShowMore] = useState(false);
 
     function handleSubmit(e) {
         e.preventDefault();
         
         emailjs.sendForm(resumeData.emailJS.serviceId, resumeData.emailJS.templateId, e.target, resumeData.emailJS.userId)
         .then((result) => {
-            console.log(result.text);
             store.addNotification({
                 title: "Message sent!",
                 message: "I will contact you ASAP.",
@@ -90,16 +90,18 @@ const Resume = () => {
                     {/* Experiences */}
                     <Grid item sm={12} md={6}>
                         <CustomTimeline title='Work Experience' icon={<WorkIcon />}>
-                            {resumeData.experiences.map(experince => (
+                            {resumeData.experiences.slice(0, showMore ? resumeData.experiences.length : 2).map(experience => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
                                     <TimelineContent className='timeline-content' >
-                                        <Typography className='timeline-title'>{experince.title}</Typography>
-                                        <Typography variant='caption' className='timeline-date'>{experince.date}</Typography>
-                                        <Typography variant='body2' className='timeline-description'>{experince.description}</Typography>
+                                        <Typography className='timeline-title'>{experience.title}</Typography>
+                                        <Typography variant='caption' className='timeline-date'>{experience.date}</Typography>
+                                        <Typography variant='body2' className='timeline-description'>{experience.description}</Typography>
                                     </TimelineContent>
                                 </TimelineItem>
                             ))}
+                            {/* <CustomButton text='Show More' type='button' onClick={e=>setShowMore(true)}/> */}
+                            <CustomButton text='Show More' type='button' onClick={e=>console.log(true)}/>
                         </CustomTimeline>
                     </Grid>
 
