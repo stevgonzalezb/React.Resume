@@ -21,7 +21,7 @@ const Resume = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [showMore] = useState(false);
+    const [showMore, setShowMore] = useState(false);
 
     function handleSubmit(e) {
         e.preventDefault();
