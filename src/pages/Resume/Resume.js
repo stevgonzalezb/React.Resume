@@ -10,6 +10,7 @@ import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeli
 import CustomButton from '../../components/Button/Button'
 import emailjs from 'emailjs-com';
 import { store } from 'react-notifications-component';
+import Link from '@material-ui/core/Link'
 
 import resumeData from '../../utils/resumeData'
 import './Resume.css'
@@ -99,10 +100,10 @@ const Resume = () => {
                                         <Typography variant='body2' className='timeline-description'>{experience.description}</Typography>
                                     </TimelineContent>
                                 </TimelineItem>
-                            ))}
-                            {/* <CustomButton text='Show More' type='button' onClick={e=>setShowMore(true)}/> */}
-                            <CustomButton text='Show More' type='button' onClick={e=>console.log(true)}/>
+                            ))}                            
                         </CustomTimeline>
+                        {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>Show less...</Link> : 
+                                <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(true)}}>Show more...</Link>}
                     </Grid>
 
                     {/* Education */}
