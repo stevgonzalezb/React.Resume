@@ -30,9 +30,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: CheckOut🛎️
         uses: actions/checkout@v3
-        uses: actions/setup-node@v3.6.0
-        with:
-          node-version: 16.14.1
+        # uses: actions/setup-node@v3.6.0
+        # with:
+          # node-version: 16.14.1
 
        #This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
       - name: Install and Build 🔧 
