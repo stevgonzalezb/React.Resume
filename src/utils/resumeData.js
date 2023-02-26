@@ -11,6 +11,8 @@ import GrupoAlvarez from '../assets/images/grupoalvarez.jpg'
 import ChatbotBarber from '../assets/images/chatbot_barber.jpg'
 import ChatbotCoffee from '../assets/images/coffee-casa.jpg'
 import Cookify from '../assets/images/cookify.png'
+import Varablanca from '../assets/images/varablanca.png'
+import MapaVarablanca from '../assets/images/mapa-varablanca.png'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -215,14 +217,48 @@ export default {
             image: Cookify,
             title: 'Cookify.com',
             caption: 'Recipes finder.',
-            description: '',
+            description: 'Simple app to search for recipes on the internet.',
             technology: {
                 name: 'React',
                 icon: 'https://img.icons8.com/officel/30/null/react.png'
             },
             links: [
                 {
-                    link: 'https://hortensiaschalets.com/menu/',
+                    link: 'https://stevgonzalezb.github.io/React.Recipes/',
+                    icon: <LanguageIcon />
+                }
+            ]
+        },
+        {
+            tag: 'Front End',
+            image: Varablanca,
+            title: 'Varablanca Costa Rica, Website',
+            caption: 'Tourism website.',
+            description: 'Responsive website designed for a rural tourism cooperative in Cost Rica.',
+            technology: {
+                name: 'Elementor',
+                icon: 'https://img.icons8.com/windows/32/000000/elementor.png'
+            },
+            links: [
+                {
+                    link: 'https://varablancaecoturismo.cr/',
+                    icon: <LanguageIcon />
+                }
+            ]
+        },
+        {
+            tag: 'Front End',
+            image: MapaVarablanca,
+            title: 'Varablanca, Interactive Map',
+            caption: 'Tourism website.',
+            description: 'Responsive website designed for a rural tourism cooperative in Cost Rica.',
+            technology: {
+                name: 'Vanilla Javascript',
+                icon: 'https://img.icons8.com/color/48/null/javascript--v1.png'
+            },
+            links: [
+                {
+                    link: 'https://varablancaecoturismo.cr/mapa/',
                     icon: <LanguageIcon />
                 }
             ]
