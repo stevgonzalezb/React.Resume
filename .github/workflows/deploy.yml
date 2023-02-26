@@ -35,6 +35,7 @@ jobs:
       - name: Install and Build 🔧 
         run: |
           npm ci
+          npm config set legacy-peer-deps true
           npm run build
       - name: Create .tar files 📁
         run: tar -cvf artifact.tar -C build .
