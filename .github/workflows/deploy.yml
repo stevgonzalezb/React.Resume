@@ -37,6 +37,7 @@ jobs:
        #This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
       - name: Install and Build 🔧 
         run: |
+          npm config set legacy-peer-deps true --openssl-legacy-provider
           npm ci --openssl-legacy-provider
           npm run build --openssl-legacy-provider
       - name: Create .tar files 📁
