@@ -5,6 +5,13 @@ import LanguageIcon from '@material-ui/icons/Language';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import DrysTech from '../assets/images/drystech.jpg'
+import HortensiasMenu from '../assets/images/menu-hortensias.jpg'
+import GrupoAlvarez from '../assets/images/grupoalvarez.jpg'
+import ChatbotBarber from '../assets/images/chatbot_barber.jpg'
+import ChatbotCoffee from '../assets/images/coffee-casa.jpg'
+import Cookify from '../assets/images/cookify.png'
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     name: 'Steven González',
@@ -176,7 +183,7 @@ export default {
     portfolio: [
         {
             tag: 'Entrepreneurship',
-            image: "https://drys.tech/.chatbots_media/drys/Portada3.JPG",
+            image: DrysTech,
             title: 'Drys Tech',
             caption: 'Software company.',
             description: 'DrysTech is a technological company based in Costa Rica since December 2019. We offer different solutions such Messenger chatbots, websites design and custom developments. Our main objective is to provide innovative technological solutions to common problems.',
@@ -205,7 +212,24 @@ export default {
         },
         {
             tag: 'Front End',
-            image: "https://drys.tech/.chatbots_media/hortensias/menu.jpg",
+            image: Cookify,
+            title: 'Cookify.com',
+            caption: 'Recipes finder.',
+            description: '',
+            technology: {
+                name: 'React',
+                icon: 'https://img.icons8.com/officel/30/null/react.png'
+            },
+            links: [
+                {
+                    link: 'https://hortensiaschalets.com/menu/',
+                    icon: <LanguageIcon />
+                }
+            ]
+        },
+        {
+            tag: 'Front End',
+            image: HortensiasMenu,
             title: 'Hortensias Chalets Menu',
             caption: 'Restaurant menu.',
             description: 'Digital menú totaly designed with Elementor, a framework for Wordpress. The main objective on this project was to improve the user experience and enhance social media interactios with a fresh and friendly desing with all Hortensias brand essence.',
@@ -222,7 +246,7 @@ export default {
         },
         {
             tag: 'Front End',
-            image: "https://drys.tech/.chatbots_media/bufete_alvarez/grupoalvarez.jpg",
+            image: GrupoAlvarez,
             title: 'Bufete Álvarez',
             caption: 'Law firm website.',
             description: 'This was one of my first projects on from DrysTech. The main idea with this project was to deploy a new page on Wordpress using a very friendly framework for Front End. So, we decided to use Elementor, wich is a powerful tool that allows you to create amazing websites with drag and drops html components and custom CSS.',
@@ -239,7 +263,7 @@ export default {
         },
         {
             tag: 'Back End',
-            image: 'https://drys.tech/.chatbots_media/drys/chatbot_barber.jpg',
+            image: ChatbotBarber,
             title: 'Scheduler messenger chatbot',
             caption: 'Chatbot',
             description: 'This is a personal project using Dialogflow as natural language processor and node js as main technology to develop the integrations with Google Calendars and MySQL.',
@@ -260,7 +284,7 @@ export default {
         },
         {
             tag: 'Back End',
-            image: 'https://drys.tech/.chatbots_media/drys/coffee-casa.jpg',
+            image: ChatbotCoffee,
             title: 'Food delivery chatbot',
             caption: 'Chatbot',
             description: 'This is a personal expriment project. Using a simple dialogflow agent integrated with Glorias Food system. It allows you make a food ordering directing from your messenger chat. ',
