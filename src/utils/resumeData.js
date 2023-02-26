@@ -48,12 +48,7 @@ export default {
         {
             title:'Senior Software Engineer',
             date:'Novacomp | Jul 2022 - Present',
-            description: `•	Create new APIs to communicate between microservices.
-            • Write unit tests using Moq and xUnit.
-            • Code reviews.
-            • Use dependency Injection, Repositories, GitHub branching strategy.
-            • Work under scrum methodology.
-            • Technologies, tools, and stack: .Net Core, Angular, MongoDB, Kafka, RabbitMQ, Circle CI, Snowflake.`
+            description: `• Technologies, tools, and stack: Javascript, mithril.js, Tailwind CSS`
         },
         {
             title:'Senior Software Consultant',
