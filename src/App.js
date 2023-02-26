@@ -6,18 +6,18 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Portfolio from './pages/Portfolio/Portfolio'
 import Resume from './pages/Resume/Resume'
-import ReactNotification from 'react-notifications-component'
+import { ReactNotifications } from 'react-notifications-component'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 import './App.css';
 
 
-function App() {
+const App = () => {
 
   return (
     <>
-    <ReactNotification />
+    {/* <ReactNotifications /> */}
     <Container className={'top-60'}>
       <Grid container spacing={6} >
         <Grid item xs={12} sm={6} md={4} lg={3}>
