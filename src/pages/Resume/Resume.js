@@ -9,12 +9,12 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeline/Timeline'
 import CustomButton from '../../components/Button/Button'
 import emailjs from 'emailjs-com';
-import { store } from 'react-notifications-component';
+//import { store } from 'react-notifications-component';
 import Link from '@material-ui/core/Link'
 
 import resumeData from '../../utils/resumeData'
 import './Resume.css'
-import 'react-notifications-component/dist/theme.css'
+//import 'react-notifications-component/dist/theme.css'
 
 
 const Resume = () => {
@@ -29,40 +29,40 @@ const Resume = () => {
         
         emailjs.sendForm(resumeData.emailJS.serviceId, resumeData.emailJS.templateId, e.target, resumeData.emailJS.userId)
         .then((result) => {
-            store.addNotification({
-                title: "Message sent!",
-                message: "I will contact you ASAP.",
-                type: "success",
-                insert: "top",
-                container: "bottom-center",
-                animationIn: ["animated", "fadeIn"],
-                animationOut: ["animated", "fadeOut"],
-                dismiss: {
-                  duration: 4000,
-                  onScreen: false,
-                  showIcon: true
-                }
-              })
-              setName('');
-              setEmail('');
-              setMessage('');
+            //store.addNotification({
+            //    title: "Message sent!",
+            //    message: "I will contact you ASAP.",
+            //    type: "success",
+            //    insert: "top",
+            //    container: "bottom-center",
+            //    animationIn: ["animated", "fadeIn"],
+            //    animationOut: ["animated", "fadeOut"],
+            //    dismiss: {
+            //      duration: 4000,
+            //      onScreen: false,
+            //      showIcon: true
+            //    }
+            //  })
+            //  setName('');
+            //  setEmail('');
+            //  setMessage('');
 
         }, (error) => {
             console.log(error.text);
-            store.addNotification({
-                title: "Error",
-                message: "Please, try again later.",
-                type: "danger",
-                insert: "top",
-                container: "bottom-center",
-                animationIn: ["animated", "fadeIn"],
-                animationOut: ["animated", "fadeOut"],
-                dismiss: {
-                  duration: 4000,
-                  onScreen: false,
-                  showIcon: true
-                }
-              })
+            //store.addNotification({
+            //    title: "Error",
+            //    message: "Please, try again later.",
+            //    type: "danger",
+            //    insert: "top",
+            //    container: "bottom-center",
+            //    animationIn: ["animated", "fadeIn"],
+            //    animationOut: ["animated", "fadeOut"],
+            //    dismiss: {
+            //      duration: 4000,
+            //      onScreen: false,
+            //      showIcon: true
+            //    }
+            //  })
         });
     }
 

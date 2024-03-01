@@ -6,7 +6,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Portfolio from './pages/Portfolio/Portfolio'
 import Resume from './pages/Resume/Resume'
-import { ReactNotifications } from 'react-notifications-component'
+//import { ReactNotifications } from 'react-notifications-component'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
