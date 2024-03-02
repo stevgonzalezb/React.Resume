@@ -2,6 +2,7 @@ import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap';
 import { NavLink, withRouter } from 'react-router-dom'
 
+import Language from '../Language/Language'
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,6 +37,14 @@ const Header = (props) => {
                     ))}
                 <CustomButton text='Hire Me' icon={<TelegramIcon />} link={mailtoText} />
                 </div>
+
+                <div style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+                padding: '8px'
+                
+                }}> <Language/> </div>
 
             </Navbar.Collapse>
         </Navbar>
