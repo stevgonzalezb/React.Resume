@@ -4,6 +4,7 @@
     padding: 0 22px 0 0 !important;
     border-radius: 6px !important;
     box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    overflow: visible !important;
 }
 
 .header .header-nav-link {

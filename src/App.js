@@ -26,7 +26,7 @@ const App = () => {
         <Grid item xs>
             <Router>
               <Header/>
-              <div className='main-content containter-shadow' >
+              <div className='main-content containter-shadow'z>
               <Switch>
                 <Route path='/portfolio'>
                   <Portfolio/>

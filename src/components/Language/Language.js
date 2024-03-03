@@ -5,44 +5,44 @@ import PortugueseIcon from '../../assets/images/portuguese.png'
 
 import  './Language.css'
 
+const LANGUAGES = [
+    {lang: 'en', icon: EnglishIcon}, 
+    {lang: 'es', icon: SpanishIcon}, 
+    {lang: 'pt', icon: PortugueseIcon}
+]
+
 const LanguageSelector = ({language}) => {
-    let icon = null
-    const [expanded, setExpanded] = useState(false);
+    let selected = null
+    const [expanded, setExpanded] = useState(false)
 
-    // Handle spanish
-    if(language === 'es') icon = SpanishIcon
+    // Get icon for language
+    for (let i = 0; i < LANGUAGES.length; i++) {
+        if (LANGUAGES[i].lang === language) {
+            selected = LANGUAGES[i]
+        }
+    }
 
-    // Handle portuguese
-    if(language === 'pt') icon = PortugueseIcon
-
-    // Default icon is English
-    else icon = EnglishIcon
+    // Validate language
+    if (!selected) selected = LANGUAGES[0]
 
     return (
-        
-        <div style={{
-            height: '30px',
-            width: '30px',
-            color:'white',
-            backgroundColor: 'red',
-            display: 'flex',
-            justifyContent: 'right',
-            borderRadius: '50%',
-            cursor: 'pointer',
-        }} onClick={() => setExpanded(!expanded)}>
-            
-            {/* Language icon */}
-            <img src={icon} alt={language}/>
+        <div>
+            {/* Selected language */}
+            <div className='icon' onClick={() => setExpanded(!expanded)}>
+                <img src={selected.icon} alt={language}/>
+            </div>
 
             {/* Language selector */}
             {expanded && (
-                <>
-                    <img src={SpanishIcon} alt='Spanish' className='language-selector-item-icon' />
-                    <img src={PortugueseIcon} alt='Portuguese' className='language-selector-item-icon' />
-                </>
+                LANGUAGES.map((lang, i) => {
+                    if (lang.lang !== selected.lang) {
+                        return (
+                            <img src={lang.icon} alt={lang.lang} className='icon' />
+                        )
+                    }
+                })
             )}
-
-        </div> 
+        </div>
     )
 }
 

@@ -25,7 +25,9 @@ const Header = (props) => {
 
             <Navbar.Toggle />
 
-            <Navbar.Collapse>
+            <Navbar.Collapse style={{
+                display: 'flex',
+            }}>
                 <Nav className='header-left' >
                     <Nav.Link as={NavLink} to='/' className={pathName === '/' ? 'header-link-active' : 'header-link'}>Resume</Nav.Link>
                     <Nav.Link as={NavLink} to='/portfolio' className={pathName === '/portfolio' ? 'header-link-active' : 'header-link'}>Portfolio</Nav.Link>
