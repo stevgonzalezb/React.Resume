@@ -8,10 +8,12 @@ import TelegramIcon from '@material-ui/icons/Telegram';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import resumeData from '../../utils/resumeData.js';
 import CustomButton from '../Button/Button'
+import { useParams } from 'react-router-dom';
 
 import './Header.css'
 
 const Header = (props) => {
+    const { lang } = useParams()
     const pathName = props?.location?.pathname
     const mailtoText = `mailto:${resumeData.email}?subject=${resumeData.mailto.subject}&body=${resumeData.mailto.body}`
 
@@ -46,7 +48,7 @@ const Header = (props) => {
                 alignItems: 'center',
                 padding: '8px'
                 
-                }}> <Language/> </div>
+                }}> <Language language={lang}/> </div>
 
             </Navbar.Collapse>
         </Navbar>

@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { Grid, Typography, Tabs, Tab, Card, CardContent, CardActionArea, CardMedia, Grow, DialogContent, Dialog, DialogTitle, DialogActions } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
+import { useParams } from 'react-router-dom';
 
 import resumeData from '../../utils/resumeData';
 import './Portfolio.css'
 
 const Portfolio = () => {
 
+    // Inside your component
+    const { lang } = useParams()
     const [tabValue, setTabValue] = useState("All");
     const [projectDialog, setProjectDialog] = useState(false);
 

@@ -25,13 +25,14 @@ const App = () => {
         </Grid>
         <Grid item xs>
             <Router>
-              <Header/>
-              <div className='main-content containter-shadow'z>
+              <div className='main-content containter-shadow'>
               <Switch>
-                <Route path='/portfolio'>
+                <Route path='/:lang/portfolio'>
+                  <Header/>
                   <Portfolio/>
                 </Route>
-                <Route path='/'>
+                <Route path='/:lang'>
+                  <Header/>
                   <Resume/>
                 </Route>
               </Switch>
