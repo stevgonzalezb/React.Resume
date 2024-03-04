@@ -17,11 +17,8 @@ function onChangeLanguage(lang) {
     // Get the current pathname and split it into parts
     let pathParts = window.location.pathname.split('/')
 
-    // Find the index of the base path (e.g., 'React.Resume')
-    let basePathIndex = pathParts.indexOf('React.Resume');
-
     // Replace the language part of the path
-    pathParts[basePathIndex + 1] = lang
+    pathParts[1] = lang
 
     // Join the parts back together into a new path
     let newPath = pathParts.join('/')
