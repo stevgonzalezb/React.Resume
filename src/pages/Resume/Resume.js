@@ -21,6 +21,43 @@ import esData from '../../data/es'
 import './Resume.css'
 //import 'react-notifications-component/dist/theme.css'
 
+const TRANSLATIONS = {
+    'en': {
+        'about': 'About Me',
+        'workExperience': 'Work Experience',
+        'education': 'Education',
+        'certifications': 'Certifications and Scores',
+        'services': 'My Services',
+        'skills': 'Skills',
+        'contactForm': 'Contact Form',
+        'contactInformation': 'Contact Information',
+        'showMore': 'Show more...',
+        'showLess': 'Show less...'
+    },
+    'pt': {
+        'about': 'Sobre Mim',
+        'workExperience': 'Experiência Profissional',
+        'education': 'Educação',
+        'certifications': 'Certificações',
+        'services': 'Meus Serviços',
+        'skills': 'Habilidades',
+        'contactForm': 'Formulário de Contato',
+        'contactInformation': 'Informações de Contato',
+        'showMore': 'Mostrar mais...',
+        'showLess': 'Mostrar menos...'
+    },
+    'es': {
+        'about': 'Sobre Mi',
+        'workExperience': 'Experiencia Laboral',
+        'education': 'Educación',
+        'certifications': 'Certificaciones y Puntuaciones',
+        'services': 'Mis Servicios',
+        'skills': 'Habilidades',
+        'contactForm': 'Formulario de Contacto',
+        'contactInformation': 'Información de Contacto'
+    }
+}
+
 
 const Resume = () => {
 
@@ -38,6 +75,10 @@ const Resume = () => {
     
     // Check if the language is supported
     if (!resumeData) resumeData = enData
+
+    // Select the translation
+    const translation = TRANSLATIONS[lang]
+    if (!translation) resumeData = TRANSLATIONS['en']
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -86,7 +127,7 @@ const Resume = () => {
             <Grid container className='section pb-45 pt-45'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
-                    <h6 className='section-title-text' >About Me</h6>
+                    <h6 className='section-title-text'>{translation.about}</h6>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant='body2' className='about-text' >{resumeData.about}</Typography>
@@ -97,7 +138,7 @@ const Resume = () => {
             <Grid container className='section'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
-                    <h6 className='section-title-text'>Resume</h6>
+                    <h6 className='section-title-text'>{translation.workExperience}</h6>
                 </Grid>
             </Grid>
 
@@ -105,7 +146,7 @@ const Resume = () => {
                 <Grid container className='resume-timeline' >
                     {/* Experiences */}
                     <Grid item sm={12} md={6}>
-                        <CustomTimeline title='Work Experience' icon={<WorkIcon />}>
+                        <CustomTimeline title={translation.workExperience} icon={<WorkIcon />}>
                             {resumeData.experiences.slice(0, showMore ? resumeData.experiences.length : 2).map(experience => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
@@ -117,13 +158,13 @@ const Resume = () => {
                                 </TimelineItem>
                             ))}                            
                         </CustomTimeline>
-                        {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>Show less...</Link> : 
-                                <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(true)}}>Show more...</Link>}
+                        {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>{translation.showLess}</Link> : 
+                                <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(true)}}>{translation.showMore}</Link>}
                     </Grid>
 
                     {/* Education */}
                     <Grid item sm={12} md={6}>
-                        <CustomTimeline title='Education' icon={<SchoolIcon />}>
+                        <CustomTimeline title={translation.education} icon={<SchoolIcon />}>
                             {resumeData.educations.map(education => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
@@ -136,7 +177,7 @@ const Resume = () => {
                             ))}
                         </CustomTimeline>
 
-                        <CustomTimeline title="Certifications and Scores" icon={<CardMembershipIcon />}>
+                        <CustomTimeline title={translation.certifications} icon={<CardMembershipIcon />}>
                             {resumeData.certifications.map(cerf => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
@@ -205,7 +246,7 @@ const Resume = () => {
                     <Grid container>
                         <Grid item className='section-title mb-30'>
                             <span></span>
-                            <h6 className='section-title-text'>Contact Form</h6>
+                            <h6 className='section-title-text'>{translation.contactForm}</h6>
                         </Grid>
                         <form onSubmit={handleSubmit} >
                         <Grid item xs={12}>
@@ -233,7 +274,7 @@ const Resume = () => {
                     <Grid container spacing={2}>
                         <Grid item className='section-title mb-30'>
                             <span></span>
-                            <h6 className='section-title-text'>Contact Information</h6>
+                            <h6 className='section-title-text'>{translation.contactInformation}</h6>
                         </Grid>
 
                         <Grid item xs={12}>

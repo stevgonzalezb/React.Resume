@@ -19,7 +19,7 @@ export default {
     name: 'Steven González',
     title: 'Software Engineer',
     resume: '',
-    about: 'Sou um engenheiro de software com mais de 6 anos de experiência na indústria de software, onde trabalhei com diferentes partes da arquitetura de software, como bancos de dados (SQL Server, MySql, NoSQL), backend (.Net core, Node JS, Python), frontend (React, Vanilla JS, Web components). Considero-me apaixonado por aprender e entender novos negócios para encontrar a melhor maneira de a tecnologia nos ajudar no dia a dia e sempre dando meu valor agregado em cada projeto ou tarefa de que sou responsável. Também gosto de fazer caminhadas, dançar e passar bons momentos com minha pequena amiga Athena. 😸',
+    about: 'Sou um engenheiro de software com mais de 6 anos de experiência na indústria de software, onde trabalhei com diferentes partes da arquitetura de software, como bancos de dados (SQL Server, MySql, NoSQL), backend (.Net core, Node JS, Python), frontend (React, Vanilla JS, Web components). Considero-me apaixonado por aprender e entender novos negócios para encontrar a melhor maneira de a tecnologia nos ajudar no dia a dia e sempre dando meu valor agregado em cada projeto ou tarefa de que sou responsável. Também gosto de fazer caminhadas, dançar e passar bons momentos com minha pequena amiga Atenea. 😸',
     email: 'stevengonzalez957@gmail.com',
     phone: '+506 8634-7798',
     address: 'Alajuela, Costa Rica',
@@ -53,32 +53,58 @@ export default {
         {
             "title": "Consultor Sênior de Software",
             "date": "Autônomo | Dez 2019 - Atual",
-            "description": "• Consultoria de software para diferentes projetos com clientes na Costa Rica. • Criou chatbots para restaurante, barbearia, hotel e site de turismo. • Integrações personalizadas como Google Calendar, Slack, Telegram e outros. • Criou sites personalizados para uma Firma de Advocacia, Restaurantes, Lojas de Roupas usando Elementor e CSS e JavaScript personalizados para criar uma boa experiência do usuário. • Projetou e desenvolveu um mapa interativo usando Leaflet.js para integrar a API do mapa e marcadores, também usou o princípio de componentes da web e webpack para compilar todo o projeto web. • Entusiasta de Python! Faço vários experimentos usando scripts python e bibliotecas PIP como Padas, Numpy e BeautifulSoup. • Stack de tecnologia: Node JS, JavaScript, Webpack, Firebase, GPC, APIs do Google, Python, WebHooks, JSON."
+            "description": `• Consultoria de software para diferentes projetos com clientes na Costa Rica. 
+            • Criei chatbots para restaurante, barbearia, hotel e site de turismo com integrações personalizadas como Google Calendar, Slack, Telegram e outros. 
+            • Criei sites personalizados para uma Firma de Advocacia, Restaurantes, Lojas de Roupas usando Elementor e CSS e JavaScript personalizados para criar uma boa experiência do usuário. 
+            • Desenvolví um mapa interativo usando Leaflet.js para integrar a API do mapa e marcadores, também usei o princípio de WebComponents e webpack para compilar todo o projeto web. 
+            • Entusiasta de Python! Faço vários experimentos usando scripts python e bibliotecas PIP como Padas, Numpy e BeautifulSoup. 
+            • Stack de tecnologia: Node JS, JavaScript, Webpack, Firebase, GPC, APIs do Google, Python, WebHooks, JSON.`
         },
         {
             "title": "Engenheiro de Software",
             "date": "Emerson Automation Solutions | Mar 2021 - Jul 2022",
-            "description": "• Trabalhou com a equipe de desenvolvimento principal para os Sistemas de Execução de Fabricação Syncade. • Implementou uma solução robusta para o manuseio de números na interface do usuário para Receitas Integradas WFx. • Projetou um fluxo de processo melhor para o ETL do QRM usando serviços de integração. • Ajudou a desenvolver e implementar um avaliador de expressão para o novo recurso AutoClose no QRM. • Criou um novo sistema de notificações para o WFx, usando um mecanismo de polling e knockout.js para lidar com sinais visuais. • Stack de tecnologia: C#, .Net Core, JavaScript, Angular, VBScripts, SQL Server, Integration Services."
+            "description": `• Trabalhei com a equipe de desenvolvimento principal para o MES Syncade. 
+            • Implementei uma solução robusta para o manuseio de números na interface do usuário para Receitas Integradas WFx. 
+            • Projetei um fluxo de processo melhor para o ETL do QRM usando serviços de integração. 
+            • Ajudei a desenvolver e implementar um avaliador de expressão para o novo recurso AutoClose no QRM. 
+            • Criei um novo sistema de notificações para o WFx, usando um mecanismo de polling e knockout.js para lidar com sinais visuais. 
+            • Stack de tecnologia: C#, .Net Core, JavaScript, Angular, VBScripts, SQL Server, Integration Services.`
         },
         {
             "title": "Engenheiro de Software",
             "date": "Smartsoft | Jun 2018 - Mar 2021",
-            "description": "• Desenvolveu software personalizado para integrar o Sentinel com transações de núcleo bancário. • Projetou e criou APIs Rest, SOAP, Win Services usando NodeJS. • Suportou aplicações internas. • Participou da tomada de requisitos dos clientes. • Desenvolveu Consultas SQL complexas e Stored Procedures. • Manteve a produtividade, NPS e auditorias +85% • Stack de tecnologia: Node js, JavaScript, .NET Framework, Java, Apache Camel, Visual Basic, GitLab, PHP, Redis, Elastic Search, Active MQ, NoSQL DB, SQL Server."
+            "description": `• Desenvolví software personalizado para integrar o Sentinel com transações de núcleo bancário. 
+            • Projetei e criou APIs Rest, SOAP, Win Services usando NodeJS. 
+            • Suportei aplicações internas. 
+            • Participei da tomada de requisitos dos clientes. 
+            • Desenvolví Consultas SQL complexas e Stored Procedures. 
+            • Mantive a produtividade, NPS e auditorias +85% 
+            • Stack de tecnologia: Node js, JavaScript, .NET Framework, Java, Apache Camel, Visual Basic, GitLab, PHP, Redis, Elastic Search, Active MQ, NoSQL DB, SQL Server.`
         },
         {
             "title": "Engenheiro de Suporte de Software",
             "date": "Palantir S.A | Maio 2016 - Maio 2018",
-            "description": "• Ajudou clientes da América Central e do lado do Caribe a suportar o QVET (software de gestão integral para clínicas veterinárias). • Implementou e treinou novos clientes até a operação ao vivo. • Participou do projeto de migração de Bancos de Dados para Fatura Digital de todos os nossos clientes. • Liderou em situações que o trabalho era muito, para alcançar o objetivo da empresa. • Criou Consultas SQL complexas para entregar relatórios personalizados de acordo com a legislação do país. • Construiu novos templates de Crystal Reports para diferentes clientes na Guatemala, Panamá e Costa Rica. • Stack de tecnologia: SQL Server, MS Access, ETL, Crystal Reports."
+            "description": `• Ajudou clientes da América Central e do lado do Caribe a suportar o QVET (software de gestão integral para clínicas veterinárias). 
+            • Implementei e treinou novos clientes até a operação ao vivo. 
+            • Participei do projeto de migração de Bancos de Dados para Fatura Digital de todos os nossos clientes. 
+            • Liderei em situações que o trabalho era muito, para alcançar o objetivo da empresa. 
+            • Criei Consultas SQL complexas para entregar relatórios personalizados de acordo com a legislação do país. 
+            • Construí novos templates de Crystal Reports para diferentes clientes na Guatemala, Panamá e Costa Rica. 
+            • Stack de tecnologia: SQL Server, MS Access, ETL, Crystal Reports.`
         },
         {
             "title": "Engenheiro de Suporte Técnico",
             "date": "Televisora de CR | Jan 2015 - Abr 2016",
-            "description": "• Ajudou usuários internos com solução de problemas no Windows 7, 8, Microsoft Office, Outlook, credenciais de diretório ativo, aplicações internas. • Melhorou a produtividade em 75% no Departamento de Gestão de TI, resolvendo mais tickets. • Revisou Jobs do SQL Server e enviou relatórios para o DBA."
+            "description": `• Ajudei usuários internos com solução de problemas no Windows 7, 8, Microsoft Office, Outlook, credenciais de diretório ativo, aplicações internas. 
+            • Melhorei a produtividade em 75% no Departamento de Gestão de TI, resolvendo mais tickets. 
+            • Revisei Jobs do SQL Server e enviou relatórios para o DBA.`
         },
         {
             "title": "Técnico de TSS - Estagiário",
             "date": "GBM as a Service | Out 2014 - Nov 2014",
-            "description": "• Ajudou usuários internos com solução de problemas no Windows 7, 8, Microsoft Office, Outlook, credenciais de diretório ativo, aplicações internas. • Melhorou a produtividade em 75% no Departamento de Gestão de TI, resolvendo mais tickets. • Revisou Jobs do SQL Server e enviou relatórios para o DBA."
+            "description": `• Ajudei usuários internos com solução de problemas no Windows 7, 8, Microsoft Office, Outlook, credenciais de diretório ativo, aplicações internas. 
+            • Melhorei a produtividade em 75% no Departamento de Gestão de TI, resolvendo mais tickets. 
+            • Revisei Jobs do SQL Server e enviou relatórios para o DBA.`
         }
     ],
     educations: [
