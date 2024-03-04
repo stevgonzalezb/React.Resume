@@ -5,6 +5,7 @@ import LanguageIcon from '@material-ui/icons/Language';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import Syncade from '../assets/images/syncade.png'
 import DrysTech from '../assets/images/drystech.jpg'
 import HortensiasMenu from '../assets/images/menu-hortensias.jpg'
 import GrupoAlvarez from '../assets/images/grupoalvarez.jpg'
@@ -47,8 +48,17 @@ export default {
     experiences: [
         {
             "title": "Engenheiro de Software Sênior",
-            "date": "Novacomp | Jul 2022 - Atual",
-            "description": "• Tecnologias, ferramentas e stack: Javascript, mithril.js, Tailwind CSS"
+            "date": "OxygenCloud | Fev 2024 - Atual",
+            "description": `• Tecnologias, ferramentas e stack: Javascript, mithril.js, Tailwind CSS, Python, OpenAI API`
+        },
+        {
+            "title": "Engenheiro de Software Sênior",
+            "date": "Novacomp | Jul 2022 - Jan 2024",
+            "description": `• Desenvolví de aplicativos web internos para o cliente OxygenCloud, usando mithril.js e Tailwind CSS.
+            • Liderei a equipe de desenvolvimento de software, fornecendo orientação e suporte para garantir a entrega de projetos de alta qualidade.
+            • Colaborei com a equipe de design para garantir a consistência e a qualidade da experiência do usuário em todos os aplicativos web.
+            • Ajudei a implementar um novo sistema de desenvolvimento de software usando websockets para comunicação em tempo real.
+            • Tecnologias, ferramentas e stack: Javascript, mithril.js, Tailwind CSS, Python`
         },
         {
             "title": "Consultor Sênior de Software",
@@ -136,7 +146,7 @@ export default {
             "description": ""
         },
         {
-            "title": "Teste de Nível de Inglês Comercial",
+            "title": "Teste de Nível de Inglês Profissional",
             "date": "Idioma Internacional | Maio 2020",
             "description": "Nível de Inglês B2+"
         }
@@ -200,6 +210,23 @@ export default {
                 {
                     "link": "https://www.linkedin.com/company/drystech",
                     "icon": <LinkedInIcon />
+                }
+            ]
+        },
+        {
+            "tag": "Front End",
+            "image": Syncade,
+            "title": "Syncade MES",
+            "caption": "Sistema de automação industrial.",
+            "description": "O Syncade MES é um sistema de automação industrial desenvolvido pela Emerson Automation Solutions. Trabalhei com a equipe de desenvolvimento principal para melhorar a interface do usuário e implementar novos recursos para o sistema. Isso incluiu a criação de uma solução robusta para o manuseio de números na interface do usuário, o projeto de um fluxo de processo melhor para o ETL do QRM e a implementação de um avaliador de expressão para o novo recurso AutoClose no QRM.",
+            "technology": {
+                "name": "JavaScript",
+                "icon": "https://img.icons8.com/color/48/null/javascript--v1.png"
+            },
+            "links": [
+                {
+                    "link": "https://www.emerson.com/en-us/automation/services-consulting/lifecycle-services/syncade",
+                    "icon": <LanguageIcon />
                 }
             ]
         },
