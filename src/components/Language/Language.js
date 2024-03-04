@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import EnglishIcon from '../../assets/images/english.png'
 import SpanishIcon from '../../assets/images/spanish.png'
 import PortugueseIcon from '../../assets/images/portuguese.png'
-import { useParams } from 'react-router-dom';
 
 import  './Language.css'
 
@@ -29,9 +28,6 @@ function onChangeLanguage(lang) {
 }
 
 const LanguageSelector = ({language}) => {
-    console.log('language', language)
-    const { lang } = useParams()
-    console.log('lang', lang)
     let selected = null
     const [expanded, setExpanded] = useState(false)
 
@@ -53,17 +49,24 @@ const LanguageSelector = ({language}) => {
             </div>
 
             {/* Language selector */}
-            {expanded && (
-                LANGUAGES.map((lang, i) => {
-                    if (lang.lang !== selected.lang) {
-                        return (
-                            <img src={lang.icon} 
-                                alt={lang.lang} className='icon' 
-                                onClick={() => onChangeLanguage(lang.lang)} />
-                        )
-                    }
-                })
-            )}
+            <div style={{
+                position: 'absolute',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '4px',
+            }}>
+                {expanded && (
+                    LANGUAGES.map((lang, i) => {
+                        if (lang.lang !== selected.lang) {
+                            return (
+                                <img src={lang.icon} 
+                                    alt={lang.lang} className='icon' 
+                                    onClick={() => onChangeLanguage(lang.lang)} />
+                            )
+                        }
+                    })
+                )}
+            </div>
         </div>
     )
 }

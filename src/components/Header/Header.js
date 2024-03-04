@@ -19,7 +19,7 @@ const Header = (props) => {
 
     return (
         <Navbar expand="lg" sticky='top' className='header'>
-            <Nav.Link as={NavLink} to='/' className='header-nav-link' >
+            <Nav.Link as={NavLink} to={`/${lang}`} className='header-nav-link' >
                 <Navbar.Brand className='header-home'>
                     <HomeRoundedIcon />
                 </Navbar.Brand>
@@ -31,8 +31,8 @@ const Header = (props) => {
                 display: 'flex',
             }}>
                 <Nav className='header-left' >
-                    <Nav.Link as={NavLink} to='/' className={pathName === '/' ? 'header-link-active' : 'header-link'}>Resume</Nav.Link>
-                    <Nav.Link as={NavLink} to='/portfolio' className={pathName === '/portfolio' ? 'header-link-active' : 'header-link'}>Portfolio</Nav.Link>
+                    <Nav.Link as={NavLink} to={`/${lang}`} className={pathName === '/' ? 'header-link-active' : 'header-link'}>Resume</Nav.Link>
+                    <Nav.Link as={NavLink} to={`/${lang}/portfolio`} className={pathName === '/portfolio' ? 'header-link-active' : 'header-link'}>Portfolio</Nav.Link>
                 </Nav>
 
                 <div className='header-right'>
