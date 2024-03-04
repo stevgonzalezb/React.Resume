@@ -24,8 +24,8 @@ export default {
     phone: '+506 8634-7798',
     address: 'Alajuela, Costa Rica',
     mailto: {
-        subject: 'I want to hire you',
-        body: 'Hello Steven, I am...'
+        subject: 'Eu quero te contrata',
+        body: 'Olá Steven, eu sou...'
     },
     emailJS: {
         serviceId: '',
@@ -46,289 +46,260 @@ export default {
     },
     experiences: [
         {
-            title:'Senior Software Engineer',
-            date:'Novacomp | Jul 2022 - Present',
-            description: `• Technologies, tools, and stack: Javascript, mithril.js, Tailwind CSS`
+            "title": "Engenheiro de Software Sênior",
+            "date": "Novacomp | Jul 2022 - Atual",
+            "description": "• Tecnologias, ferramentas e stack: Javascript, mithril.js, Tailwind CSS"
         },
         {
-            title:'Senior Software Consultant',
-            date:'Self-Employed | Dec 2019 - Present',
-            description: `• Software consulting for different projects with customers in Costa Rica.
-            • Created chatbots for a restaurant, barbershop, hotel and tourism website.
-            • Custom integrations such as Google Calendar, Slack, Telegram and others.
-            • Created custom websites for a Law Firm, Restaurants, Clothes Stores using Elementor and customs CSS and JavaScript to created good user experience.
-            • Designed and develop an interactive map using Leaflet.js to integrate the map API and markers, also used web components principle and webpack to compile all web project. 
-            • Python enthusiast! I do several experiments using python scripts and PIP libraries such as Padas, Numpy and BeautifulSoup.
-            • Tech stack: Node JS, JavaScript, Webpack, Firebase, GPC, Google APIs, Python, WebHooks, JSON.`
+            "title": "Consultor Sênior de Software",
+            "date": "Autônomo | Dez 2019 - Atual",
+            "description": "• Consultoria de software para diferentes projetos com clientes na Costa Rica. • Criou chatbots para restaurante, barbearia, hotel e site de turismo. • Integrações personalizadas como Google Calendar, Slack, Telegram e outros. • Criou sites personalizados para uma Firma de Advocacia, Restaurantes, Lojas de Roupas usando Elementor e CSS e JavaScript personalizados para criar uma boa experiência do usuário. • Projetou e desenvolveu um mapa interativo usando Leaflet.js para integrar a API do mapa e marcadores, também usou o princípio de componentes da web e webpack para compilar todo o projeto web. • Entusiasta de Python! Faço vários experimentos usando scripts python e bibliotecas PIP como Padas, Numpy e BeautifulSoup. • Stack de tecnologia: Node JS, JavaScript, Webpack, Firebase, GPC, APIs do Google, Python, WebHooks, JSON."
         },
         {
-            title:'Software Engineer',
-            date:'Emerson Automation Solutions | Mar 2021 - Jul 2022',
-            description: `• Worked with development core team for Syncade Manufacturing Execution Systems.
-            • Implemented a strong solution for numbers handling on front end for WFx Integrated Recipes. 
-            • Designed a better process flow for the ETL of QRM using integration services.
-            • Helped to develop and implement an expression evaluator for the new AutoClose feature in QRM.
-            • Created new notifications system for WFx, using a polling mechanism and knockout.js to handle visual cues.
-            • Tech stack: C#, .Net Core, JavaScript, Angular, VBScritps, SQL Server, Integration Services.`
+            "title": "Engenheiro de Software",
+            "date": "Emerson Automation Solutions | Mar 2021 - Jul 2022",
+            "description": "• Trabalhou com a equipe de desenvolvimento principal para os Sistemas de Execução de Fabricação Syncade. • Implementou uma solução robusta para o manuseio de números na interface do usuário para Receitas Integradas WFx. • Projetou um fluxo de processo melhor para o ETL do QRM usando serviços de integração. • Ajudou a desenvolver e implementar um avaliador de expressão para o novo recurso AutoClose no QRM. • Criou um novo sistema de notificações para o WFx, usando um mecanismo de polling e knockout.js para lidar com sinais visuais. • Stack de tecnologia: C#, .Net Core, JavaScript, Angular, VBScripts, SQL Server, Integration Services."
         },
         {
-            title:'Software Engineer',
-            date:'Smartsoft | Jun 2018 - Mar 2021',
-            description: `• Developed custom software in order to integrate Sentinel with bank core transactions. 
-            • Designed and created Rest APIs, SOAP , Win Services using NodeJS. 
-            • Supported internal applications. 
-            • Participated taking customer requirements.
-            • Developed complex SQL Queries and Stored Procedures.
-            • Kept productivity, NPS and audits +85%
-            • Tech stack: Node js, JavaScript, .NET Framework, Java, Apache Camel, Visual Basic, GitLab, PHP, Redis, Elastic Search, Active MQ, NoSQL DB, SQL Server.`
+            "title": "Engenheiro de Software",
+            "date": "Smartsoft | Jun 2018 - Mar 2021",
+            "description": "• Desenvolveu software personalizado para integrar o Sentinel com transações de núcleo bancário. • Projetou e criou APIs Rest, SOAP, Win Services usando NodeJS. • Suportou aplicações internas. • Participou da tomada de requisitos dos clientes. • Desenvolveu Consultas SQL complexas e Stored Procedures. • Manteve a produtividade, NPS e auditorias +85% • Stack de tecnologia: Node js, JavaScript, .NET Framework, Java, Apache Camel, Visual Basic, GitLab, PHP, Redis, Elastic Search, Active MQ, NoSQL DB, SQL Server."
         },
         {
-            title:'Software Support Engineer',
-            date:'Palantir S.A | May 2016 - May 2018',
-            description: `• Helped customers from Central America and Caribbean side to support QVET(Integral management software for veterinary clinics).
-            • Implemented and trained new customers until run live operations.
-            • Participated in the project of Databases migration to Digital Invoice of all our customers.
-            • Led on situations that work was so much, to achieve the company goal. 
-            • Created complex SQL Queries in order to deliver custom reports according country legislation.
-            • Built new Crystal Reports templates for differents customers in Guatemala, Panama and Costa Rica.
-            • Tech stack: SQL Server, MS Access, ETL, Crystal Reports.`
+            "title": "Engenheiro de Suporte de Software",
+            "date": "Palantir S.A | Maio 2016 - Maio 2018",
+            "description": "• Ajudou clientes da América Central e do lado do Caribe a suportar o QVET (software de gestão integral para clínicas veterinárias). • Implementou e treinou novos clientes até a operação ao vivo. • Participou do projeto de migração de Bancos de Dados para Fatura Digital de todos os nossos clientes. • Liderou em situações que o trabalho era muito, para alcançar o objetivo da empresa. • Criou Consultas SQL complexas para entregar relatórios personalizados de acordo com a legislação do país. • Construiu novos templates de Crystal Reports para diferentes clientes na Guatemala, Panamá e Costa Rica. • Stack de tecnologia: SQL Server, MS Access, ETL, Crystal Reports."
         },
         {
-            title:'Technical Support Engineer',
-            date:'Televisora de CR | Jan 2015 - Apr 2016',
-            description: `• Helped internal users with troubleshooting on Windows 7, 8, Microsoft Office, Outlook, active directory credentials, internal applications. 
-            • Improved the productivity by the 75% in the IT Management Department taking and solving more tickets.
-            • Reviewed SQL Server Jobs and send a reports to DBA.`
+            "title": "Engenheiro de Suporte Técnico",
+            "date": "Televisora de CR | Jan 2015 - Abr 2016",
+            "description": "• Ajudou usuários internos com solução de problemas no Windows 7, 8, Microsoft Office, Outlook, credenciais de diretório ativo, aplicações internas. • Melhorou a produtividade em 75% no Departamento de Gestão de TI, resolvendo mais tickets. • Revisou Jobs do SQL Server e enviou relatórios para o DBA."
         },
         {
-            title:'TSS Technician - Intern',
-            date:'GBM as a Service | Oct 2014 - Nov 2014',
-            description: `• Helped internal users with troubleshooting on Windows 7, 8, Microsoft Office, Outlook, active directory credentials, internal applications. 
-            • Improved the productivity by the 75% in the IT Management Department taking and solving more tickets.
-            • Reviewed SQL Server Jobs and send a reports to DBA.`
+            "title": "Técnico de TSS - Estagiário",
+            "date": "GBM as a Service | Out 2014 - Nov 2014",
+            "description": "• Ajudou usuários internos com solução de problemas no Windows 7, 8, Microsoft Office, Outlook, credenciais de diretório ativo, aplicações internas. • Melhorou a produtividade em 75% no Departamento de Gestão de TI, resolvendo mais tickets. • Revisou Jobs do SQL Server e enviou relatórios para o DBA."
         }
     ],
     educations: [
         {
-            title:'Software Engineering',
-            date:'Barchelor, Universidad Técnica Nacional | 2016  - 2021',
-            description: '• Beginners student tutoring'
+            "title": "Engenharia de Software",
+            "date": "Bacharelado, Universidad Técnica Nacional | 2016 - 2021",
+            "description": "• Tutoria para alunos iniciantes"
         },
         {
-            title:'Technical High School & Networking IT ',
-            date:'CTP Jesús Ocaña Rojas | 2012  - 2014',
-            description: `• CCNA 1,2 & 3 modules finished.`
+            "title": "Ensino Médio Técnico & TI em Redes",
+            "date": "CTP Jesús Ocaña Rojas | 2012 - 2014",
+            "description": "• Módulos CCNA 1,2 & 3 concluídos."
         }
-    ],
+    ],    
     certifications: [
         {
-            title:'Lean Six Sigma Yellow Belt (ICYB)',
-            date:'VMEdu Inc. | March 2020  - March 2023',
-            description: ''
+            "title": "Lean Six Sigma Yellow Belt (ICYB)",
+            "date": "VMEdu Inc. | Março 2020 - Março 2023",
+            "description": ""
         },
         {
-            title:'Scrum Fundamentals Certified (SFC)',
-            date:'VMEdu Inc. | March 2020  - March 2023',
-            description: ``
+            "title": "Certificado Fundamental de Scrum (SFC)",
+            "date": "VMEdu Inc. | Março 2020 - Março 2023",
+            "description": ""
         },
         {
-            title:'Advanced SQL for Data Scientists',
-            date:'LinkedIn Learning | Feb 2020',
-            description: ``
+            "title": "SQL Avançado para Cientistas de Dados",
+            "date": "LinkedIn Learning | Fevereiro 2020",
+            "description": ""
         },
         {
-            title:'Business English Level Test',
-            date:'Idioma Internacional | May 2020',
-            description: `B2+ English Level`
+            "title": "Teste de Nível de Inglês Comercial",
+            "date": "Idioma Internacional | Maio 2020",
+            "description": "Nível de Inglês B2+"
         }
     ],
     services: [
         {
-            title: 'Web Dev',
-            description:'I have been working with several......',
-            icon: <FacebookIcon />
+            "title": "Desenvolvimento Web",
+            "description": "Tenho trabalhado com vários projetos de desenvolvimento web, incluindo websites personalizados, aplicações web e integrações de sistemas. Utilizo tecnologias modernas como React, Node.js e bases de dados SQL e NoSQL para criar soluções robustas e escaláveis que atendem às necessidades dos clientes."
         },
         {
-            title: 'Web Dev',
-            description:'I have been working with several......',
-            icon: <FacebookIcon />
+            "title": "Consultoria de TI",
+            "description": "Ofereço serviços de consultoria de TI para ajudar empresas a otimizar seus processos tecnológicos, implementar novas soluções e melhorar a eficiência de seus sistemas existentes. Isso inclui análise de sistemas, planejamento estratégico de TI e suporte técnico."
         },
         {
-            title: 'Web Dev',
-            description:'I have been working with several......',
-            icon: <FacebookIcon />
+            "title": "Desenvolvimento de Chatbots",
+            "description": "Especializo-me no desenvolvimento de chatbots personalizados para melhorar a interação com o cliente e automatizar processos de negócios. Utilizo plataformas como Dialogflow e Microsoft Bot Framework para criar chatbots inteligentes que podem ser integrados a websites, aplicativos móveis e plataformas de mídia social."
         }
     ],
     skills: [
         {
-            title: 'Back End',
-            description: ['Node JS', '.NET / C#', 'Python', 'Java', 'Cloud Functions', 'Firebase']
+            "title": "Back-end",
+            "description": ["Node.js", ".NET / C#", "Python", "Java", "Funções de Nuvem", "Firebase"]
         },
         {
-            title: 'Front & Design',
-            description: ['React JS', 'HTML', 'CSS', 'Wordpress', 'Elementor']
+            "title": "Front-end e Design",
+            "description": ["React.js", "HTML", "CSS", "WordPress", "Elementor"]
         },
         {
-            title: 'Data Structures',
-            description: ['SQL Server', 'MySQL', 'NoSQL DB', 'Redis', 'Active MQ', 'Rabbit MQ', 'Elastic Search']
+            "title": "Estruturas de Dados",
+            "description": ["SQL Server", "MySQL", "Bancos de Dados NoSQL", "Redis", "Active MQ", "Rabbit MQ", "Elastic Search"]
         },
         {
-            title: 'Source Control',
-            description: ['Git', 'GitHub', 'GitLab', 'SourceSafe']
+            "title": "Controle de Versão",
+            "description": ["Git", "GitHub", "GitLab", "SourceSafe"]
         }
     ],
     portfolio: [
         {
-            tag: 'Entrepreneurship',
-            image: DrysTech,
-            title: 'Drys Tech',
-            caption: 'Software company.',
-            description: 'DrysTech is a technological company based in Costa Rica since December 2019. We offer different solutions such Messenger chatbots, websites design and custom developments. Our main objective is to provide innovative technological solutions to common problems.',
-            technology: {
-                name: '',
-                icon: 'https://img.icons8.com/emoji/48/000000/rocket-emji.png'
+            "tag": "Empreendedorismo",
+            "image": "DrysTech",
+            "title": "Drys Tech",
+            "caption": "Empresa de software.",
+            "description": "A DrysTech é uma empresa de tecnologia baseada na Costa Rica desde dezembro de 2019. Oferecemos diferentes soluções, como chatbots do Messenger, design de sites e desenvolvimentos personalizados. Nosso principal objetivo é fornecer soluções tecnológicas inovadoras para problemas comuns.",
+            "technology": {
+                "name": "",
+                "icon": "https://img.icons8.com/emoji/48/000000/rocket-emji.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'https://drys.tech',
-                    icon: <LanguageIcon />
+                    "link": "https://drys.tech",
+                    "icon": "<LanguageIcon />"
                 },
                 {
-                    link: 'https://www.facebook.com/drys.technologies',
-                    icon: <FacebookIcon />
+                    "link": "https://www.facebook.com/drys.technologies",
+                    "icon": "<FacebookIcon />"
                 },
                 {
-                    link: 'https://instagram.com/drys.tech',
-                    icon: <InstagramIcon />
+                    "link": "https://instagram.com/drys.tech",
+                    "icon": "<InstagramIcon />"
                 },
                 {
-                    link: 'https://www.linkedin.com/company/drystech',
-                    icon: <LinkedInIcon />
+                    "link": "https://www.linkedin.com/company/drystech",
+                    "icon": "<LinkedInIcon />"
                 }
             ]
         },
         {
-            tag: 'Front End',
-            image: Cookify,
-            title: 'Cookify.com',
-            caption: 'Recipes finder.',
-            description: 'Simple app to search for recipes on the internet.',
-            technology: {
-                name: 'React',
-                icon: 'https://img.icons8.com/officel/30/null/react.png'
+            "tag": "Front End",
+            "image": "Cookify",
+            "title": "Cookify.com",
+            "caption": "Buscador de receitas.",
+            "description": "Aplicativo simples para buscar receitas na internet.",
+            "technology": {
+                "name": "React",
+                "icon": "https://img.icons8.com/officel/30/null/react.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'https://stevgonzalezb.github.io/React.Recipes/',
-                    icon: <LanguageIcon />
+                    "link": "https://stevgonzalezb.github.io/React.Recipes/",
+                    "icon": "<LanguageIcon />"
                 }
             ]
         },
         {
-            tag: 'Front End',
-            image: Varablanca,
-            title: 'Varablanca Costa Rica, Website',
-            caption: 'Tourism website.',
-            description: 'Responsive website designed for a rural tourism cooperative in Cost Rica.',
-            technology: {
-                name: 'Elementor',
-                icon: 'https://img.icons8.com/windows/32/000000/elementor.png'
+            "tag": "Front End",
+            "image": "Varablanca",
+            "title": "Varablanca Costa Rica, Site",
+            "caption": "Site de turismo.",
+            "description": "Site responsivo projetado para uma cooperativa de turismo rural na Costa Rica.",
+            "technology": {
+                "name": "Elementor",
+                "icon": "https://img.icons8.com/windows/32/000000/elementor.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'https://varablancaecoturismo.cr/',
-                    icon: <LanguageIcon />
+                    "link": "https://varablancaecoturismo.cr/",
+                    "icon": "<LanguageIcon />"
                 }
             ]
         },
         {
-            tag: 'Front End',
-            image: MapaVarablanca,
-            title: 'Varablanca, Interactive Map',
-            caption: 'Tourism website.',
-            description: 'Responsive website designed for a rural tourism cooperative in Cost Rica.',
-            technology: {
-                name: 'Vanilla Javascript',
-                icon: 'https://img.icons8.com/color/48/null/javascript--v1.png'
+            "tag": "Front End",
+            "image": "MapaVarablanca",
+            "title": "Varablanca, Mapa Interativo",
+            "caption": "Site de turismo.",
+            "description": "Site responsivo projetado para uma cooperativa de turismo rural na Costa Rica.",
+            "technology": {
+                "name": "Vanilla Javascript",
+                "icon": "https://img.icons8.com/color/48/null/javascript--v1.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'https://varablancaecoturismo.cr/mapa/',
-                    icon: <LanguageIcon />
+                    "link": "https://varablancaecoturismo.cr/mapa/",
+                    "icon": "<LanguageIcon />"
                 }
             ]
         },
         {
-            tag: 'Front End',
-            image: HortensiasMenu,
-            title: 'Hortensias Chalets Menu',
-            caption: 'Restaurant menu.',
-            description: 'Digital menú totaly designed with Elementor, a framework for Wordpress. The main objective on this project was to improve the user experience and enhance social media interactios with a fresh and friendly desing with all Hortensias brand essence.',
-            technology: {
-                name: 'Elementor',
-                icon: 'https://img.icons8.com/windows/32/000000/elementor.png'
+            "tag": "Front End",
+            "image": "HortensiasMenu",
+            "title": "Menu dos Chalés Hortênsias",
+            "caption": "Menu do restaurante.",
+            "description": "Menu digital totalmente projetado com Elementor, um framework para Wordpress. O principal objetivo deste projeto foi melhorar a experiência do usuário e aumentar as interações nas mídias sociais com um design fresco e amigável, mantendo toda a essência da marca Hortênsias.",
+            "technology": {
+                "name": "Elementor",
+                "icon": "https://img.icons8.com/windows/32/000000/elementor.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'https://hortensiaschalets.com/menu/',
-                    icon: <LanguageIcon />
+                    "link": "https://hortensiaschalets.com/menu/",
+                    "icon": "<LanguageIcon />"
                 }
             ]
         },
         {
-            tag: 'Front End',
-            image: GrupoAlvarez,
-            title: 'Bufete Álvarez',
-            caption: 'Law firm website.',
-            description: 'This was one of my first projects on from DrysTech. The main idea with this project was to deploy a new page on Wordpress using a very friendly framework for Front End. So, we decided to use Elementor, wich is a powerful tool that allows you to create amazing websites with drag and drops html components and custom CSS.',
-            technology: {
-                name: 'Elementor',
-                icon: 'https://img.icons8.com/windows/32/000000/elementor.png'
+            "tag": "Front End",
+            "image": "GrupoAlvarez",
+            "title": "Bufete Álvarez",
+            "caption": "Site de escritório de advocacia.",
+            "description": "Este foi um dos meus primeiros projetos na DrysTech. A principal ideia deste projeto foi implementar uma nova página no Wordpress usando um framework muito amigável para Front End. Então, decidimos usar o Elementor, que é uma ferramenta poderosa que permite criar sites incríveis com componentes HTML arrastáveis e CSS personalizado.",
+            "technology": {
+                "name": "Elementor",
+                "icon": "https://img.icons8.com/windows/32/000000/elementor.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'https://bufetealvarezcr.com/',
-                    icon: <LanguageIcon />
+                    "link": "https://bufetealvarezcr.com/",
+                    "icon": "<LanguageIcon />"
                 }
             ]
         },
         {
-            tag: 'Back End',
-            image: ChatbotBarber,
-            title: 'Scheduler messenger chatbot',
-            caption: 'Chatbot',
-            description: 'This is a personal project using Dialogflow as natural language processor and node js as main technology to develop the integrations with Google Calendars and MySQL.',
-            technology: {
-                name: 'Node JS',
-                icon: 'https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png'
+            "tag": "Back End",
+            "image": "ChatbotBarber",
+            "title": "Chatbot Agendador Messenger",
+            "caption": "Chatbot",
+            "description": "Este é um projeto pessoal usando o Dialogflow como processador de linguagem natural e Node.js como principal tecnologia para desenvolver as integrações com o Google Calendars e MySQL.",
+            "technology": {
+                "name": "Node JS",
+                "icon": "https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png"
             },
-            links: [
+            "links": [
                 {
-                    link: 'http://m.me/barberstylecr',
-                    icon: <FacebookIcon />
+                    "link": "http://m.me/barberstylecr",
+                    "icon": "<FacebookIcon />"
                 },
                 {
-                    link: 'https://github.com/stevgonzalezb/barberlife_chatbot',
-                    icon: <GitHubIcon />
+                    "link": "https://github.com/stevgonzalezb/barberlife_chatbot",
+                    "icon": "<GitHubIcon />"
                 }
             ]
         },
         {
-            tag: 'Back End',
-            image: ChatbotCoffee,
-            title: 'Food delivery chatbot',
-            caption: 'Chatbot',
-            description: 'This is a personal expriment project. Using a simple dialogflow agent integrated with Glorias Food system. It allows you make a food ordering directing from your messenger chat. ',
-            technology: {
-                name: 'Dialogflow',
-                icon: 'https://pbs.twimg.com/profile_images/880147119528476672/S7C-2C6t.jpg'
+            "tag": "Back End",
+            "image": "ChatbotCoffee",
+            "title": "Chatbot de Entrega de Comida",
+            "caption": "Chatbot",
+            "description": "Este é um projeto experimental pessoal. Usando um agente simples do Dialogflow integrado ao sistema Glorias Food. Ele permite que você faça um pedido de comida diretamente do seu chat do messenger.",
+            "technology": {
+                "name": "Dialogflow",
+                "icon": "https://pbs.twimg.com/profile_images/880147119528476672/S7C-2C6t.jpg"
             },
-            links: [
+            "links": [
                 {
-                    link: 'http://m.me/110871247271177',
-                    icon: <FacebookIcon />
+                    "link": "http://m.me/110871247271177",
+                    "icon": "<FacebookIcon />"
                 }
             ]
         }
     ]
+        
 }

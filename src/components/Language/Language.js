@@ -8,7 +8,7 @@ import  './Language.css'
 // Supported languages
 const LANGUAGES = [
     {lang: 'en', icon: EnglishIcon}, 
-    {lang: 'es', icon: SpanishIcon}, 
+    //{lang: 'es', icon: SpanishIcon}, 
     {lang: 'pt', icon: PortugueseIcon}
 ]
 
