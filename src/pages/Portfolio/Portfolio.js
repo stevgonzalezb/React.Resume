@@ -3,7 +3,10 @@ import { Grid, Typography, Tabs, Tab, Card, CardContent, CardActionArea, CardMed
 import Tooltip from '@material-ui/core/Tooltip';
 import { useParams } from 'react-router-dom';
 
-import resumeData from '../../utils/resumeData';
+import enData from '../../data/en'
+import ptData from '../../data/pt'
+import esData from '../../data/es'
+
 import './Portfolio.css'
 
 const Portfolio = () => {
@@ -12,6 +15,15 @@ const Portfolio = () => {
     const { lang } = useParams()
     const [tabValue, setTabValue] = useState("All");
     const [projectDialog, setProjectDialog] = useState(false);
+
+    // Assign the data to the resumeData variable
+    let resumeData = null
+    if (lang === 'en') resumeData = enData
+    if (lang === 'pt') resumeData = ptData
+    if (lang === 'es') resumeData = esData
+    
+    // Check if the language is supported
+    if (!resumeData) resumeData = enData
 
     const ProjectDialog = () => (
         <Dialog className='project-dialog' open={projectDialog} onClose={() => setProjectDialog(false)}>

@@ -11,18 +11,33 @@ import CustomButton from '../../components/Button/Button'
 import emailjs from 'emailjs-com';
 //import { store } from 'react-notifications-component';
 import Link from '@material-ui/core/Link'
+import { useParams } from 'react-router-dom';
 
-import resumeData from '../../utils/resumeData'
+
+import enData from '../../data/en'
+import ptData from '../../data/pt'
+import esData from '../../data/es'
+
 import './Resume.css'
 //import 'react-notifications-component/dist/theme.css'
 
 
 const Resume = () => {
 
+    const { lang } = useParams()    
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [showMore, setShowMore] = useState(false);
+
+    // Assign the data to the resumeData variable
+    let resumeData = null
+    if (lang === 'en') resumeData = enData
+    if (lang === 'pt') resumeData = ptData
+    if (lang === 'es') resumeData = esData
+    
+    // Check if the language is supported
+    if (!resumeData) resumeData = enData
 
     function handleSubmit(e) {
         e.preventDefault();
