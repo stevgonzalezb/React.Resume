@@ -150,7 +150,7 @@ export default {
     portfolio: [
         {
             "tag": "Empreendedorismo",
-            "image": "DrysTech",
+            "image": DrysTech,
             "title": "Drys Tech",
             "caption": "Empresa de software.",
             "description": "A DrysTech é uma empresa de tecnologia baseada na Costa Rica desde dezembro de 2019. Oferecemos diferentes soluções, como chatbots do Messenger, design de sites e desenvolvimentos personalizados. Nosso principal objetivo é fornecer soluções tecnológicas inovadoras para problemas comuns.",
@@ -161,25 +161,25 @@ export default {
             "links": [
                 {
                     "link": "https://drys.tech",
-                    "icon": "<LanguageIcon />"
+                    "icon": <LanguageIcon />
                 },
                 {
                     "link": "https://www.facebook.com/drys.technologies",
-                    "icon": "<FacebookIcon />"
+                    "icon": <FacebookIcon />
                 },
                 {
                     "link": "https://instagram.com/drys.tech",
-                    "icon": "<InstagramIcon />"
+                    "icon": <InstagramIcon />
                 },
                 {
                     "link": "https://www.linkedin.com/company/drystech",
-                    "icon": "<LinkedInIcon />"
+                    "icon": <LinkedInIcon />
                 }
             ]
         },
         {
             "tag": "Front End",
-            "image": "Cookify",
+            "image": Cookify,
             "title": "Cookify.com",
             "caption": "Buscador de receitas.",
             "description": "Aplicativo simples para buscar receitas na internet.",
@@ -190,13 +190,13 @@ export default {
             "links": [
                 {
                     "link": "https://stevgonzalezb.github.io/React.Recipes/",
-                    "icon": "<LanguageIcon />"
+                    "icon": <LanguageIcon />
                 }
             ]
         },
         {
             "tag": "Front End",
-            "image": "Varablanca",
+            "image": Varablanca,
             "title": "Varablanca Costa Rica, Site",
             "caption": "Site de turismo.",
             "description": "Site responsivo projetado para uma cooperativa de turismo rural na Costa Rica.",
@@ -207,13 +207,13 @@ export default {
             "links": [
                 {
                     "link": "https://varablancaecoturismo.cr/",
-                    "icon": "<LanguageIcon />"
+                    "icon": <LanguageIcon />
                 }
             ]
         },
         {
             "tag": "Front End",
-            "image": "MapaVarablanca",
+            "image": MapaVarablanca,
             "title": "Varablanca, Mapa Interativo",
             "caption": "Site de turismo.",
             "description": "Site responsivo projetado para uma cooperativa de turismo rural na Costa Rica.",
@@ -224,13 +224,13 @@ export default {
             "links": [
                 {
                     "link": "https://varablancaecoturismo.cr/mapa/",
-                    "icon": "<LanguageIcon />"
+                    "icon": <LanguageIcon />
                 }
             ]
         },
         {
             "tag": "Front End",
-            "image": "HortensiasMenu",
+            "image": HortensiasMenu,
             "title": "Menu dos Chalés Hortênsias",
             "caption": "Menu do restaurante.",
             "description": "Menu digital totalmente projetado com Elementor, um framework para Wordpress. O principal objetivo deste projeto foi melhorar a experiência do usuário e aumentar as interações nas mídias sociais com um design fresco e amigável, mantendo toda a essência da marca Hortênsias.",
@@ -241,13 +241,13 @@ export default {
             "links": [
                 {
                     "link": "https://hortensiaschalets.com/menu/",
-                    "icon": "<LanguageIcon />"
+                    "icon": <LanguageIcon />
                 }
             ]
         },
         {
             "tag": "Front End",
-            "image": "GrupoAlvarez",
+            "image": GrupoAlvarez,
             "title": "Bufete Álvarez",
             "caption": "Site de escritório de advocacia.",
             "description": "Este foi um dos meus primeiros projetos na DrysTech. A principal ideia deste projeto foi implementar uma nova página no Wordpress usando um framework muito amigável para Front End. Então, decidimos usar o Elementor, que é uma ferramenta poderosa que permite criar sites incríveis com componentes HTML arrastáveis e CSS personalizado.",
@@ -258,13 +258,13 @@ export default {
             "links": [
                 {
                     "link": "https://bufetealvarezcr.com/",
-                    "icon": "<LanguageIcon />"
+                    "icon": <LanguageIcon />
                 }
             ]
         },
         {
             "tag": "Back End",
-            "image": "ChatbotBarber",
+            "image": ChatbotBarber,
             "title": "Chatbot Agendador Messenger",
             "caption": "Chatbot",
             "description": "Este é um projeto pessoal usando o Dialogflow como processador de linguagem natural e Node.js como principal tecnologia para desenvolver as integrações com o Google Calendars e MySQL.",
@@ -275,17 +275,17 @@ export default {
             "links": [
                 {
                     "link": "http://m.me/barberstylecr",
-                    "icon": "<FacebookIcon />"
+                    "icon": <FacebookIcon />
                 },
                 {
                     "link": "https://github.com/stevgonzalezb/barberlife_chatbot",
-                    "icon": "<GitHubIcon />"
+                    "icon": <GitHubIcon />
                 }
             ]
         },
         {
             "tag": "Back End",
-            "image": "ChatbotCoffee",
+            "image": ChatbotCoffee,
             "title": "Chatbot de Entrega de Comida",
             "caption": "Chatbot",
             "description": "Este é um projeto experimental pessoal. Usando um agente simples do Dialogflow integrado ao sistema Glorias Food. Ele permite que você faça um pedido de comida diretamente do seu chat do messenger.",
@@ -296,7 +296,7 @@ export default {
             "links": [
                 {
                     "link": "http://m.me/110871247271177",
-                    "icon": "<FacebookIcon />"
+                    "icon": <FacebookIcon />
                 }
             ]
         }
