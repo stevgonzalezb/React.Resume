@@ -20,7 +20,7 @@ export default {
     name: 'Steven González',
     title: 'Software Engineer',
     resume: '',
-    about: 'Sou um engenheiro de software com mais de 6 anos de experiência na indústria de software, onde trabalhei com diferentes partes da arquitetura de software, como bancos de dados (SQL Server, MySql, NoSQL), backend (.Net core, Node JS, Python), frontend (React, Vanilla JS, Web components). Considero-me apaixonado por aprender e entender novos negócios para encontrar a melhor maneira de a tecnologia nos ajudar no dia a dia e sempre dando meu valor agregado em cada projeto ou tarefa de que sou responsável. Também gosto de fazer caminhadas, dançar e passar bons momentos com minha pequena amiga Atenea. 😸',
+    about: 'Sou um engenheiro de software com mais de 8 anos de experiência na indústria de software, onde trabalhei com diferentes partes da arquitetura de software, como bancos de dados (SQL Server, MySql, NoSQL), backend (.Net core, Node JS, Python), frontend (React, Vanilla JS, Web components). Considero-me apaixonado por aprender e entender novos negócios para encontrar a melhor maneira de a tecnologia nos ajudar no dia a dia e sempre dando meu valor agregado em cada projeto ou tarefa de que sou responsável. Também gosto de fazer caminhadas, dançar e passar bons momentos com minha pequena amiga Atenea. 😸',
     email: 'stevengonzalez957@gmail.com',
     phone: '+506 8634-7798',
     address: 'Alajuela, Costa Rica',
@@ -74,7 +74,7 @@ export default {
             "title": "Engenheiro de Software",
             "date": "Emerson Automation Solutions | Mar 2021 - Jul 2022",
             "description": `• Trabalhei com a equipe de desenvolvimento principal para o MES Syncade. 
-            • Implementei uma solução robusta para o manuseio de números na interface do usuário para Receitas Integradas WFx. 
+            • Implementei uma solução robusta para o controle de números na interface do usuário para Receitas Integradas WFx. 
             • Projetei um fluxo de processo melhor para o ETL do QRM usando serviços de integração. 
             • Ajudei a desenvolver e implementar um avaliador de expressão para o novo recurso AutoClose no QRM. 
             • Criei um novo sistema de notificações para o WFx, usando um mecanismo de polling e knockout.js para lidar com sinais visuais. 
