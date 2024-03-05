@@ -127,7 +127,7 @@ const Resume = () => {
             <Grid container className='section pb-45 pt-45'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
-                    <h6 className='section-title-text'>{translation.about}</h6>
+                    <h6 className='section-title-text'>{translation?.about}</h6>
                 </Grid>
                 <Grid item xs={12}>
                     <Typography variant='body2' className='about-text' >{resumeData.about}</Typography>
@@ -138,7 +138,7 @@ const Resume = () => {
             <Grid container className='section'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
-                    <h6 className='section-title-text'>{translation.workExperience}</h6>
+                    <h6 className='section-title-text'>{translation?.workExperience}</h6>
                 </Grid>
             </Grid>
 
@@ -146,7 +146,7 @@ const Resume = () => {
                 <Grid container className='resume-timeline' >
                     {/* Experiences */}
                     <Grid item sm={12} md={6}>
-                        <CustomTimeline title={translation.workExperience} icon={<WorkIcon />}>
+                        <CustomTimeline title={translation?.workExperience} icon={<WorkIcon />}>
                             {resumeData.experiences.slice(0, showMore ? resumeData.experiences.length : 2).map(experience => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
@@ -158,13 +158,13 @@ const Resume = () => {
                                 </TimelineItem>
                             ))}                            
                         </CustomTimeline>
-                        {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>{translation.showLess}</Link> : 
-                                <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(true)}}>{translation.showMore}</Link>}
+                        {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>{translation?.showLess}</Link> : 
+                                <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(true)}}>{translation?.showMore}</Link>}
                     </Grid>
 
                     {/* Education */}
                     <Grid item sm={12} md={6}>
-                        <CustomTimeline title={translation.education} icon={<SchoolIcon />}>
+                        <CustomTimeline title={translation?.education} icon={<SchoolIcon />}>
                             {resumeData.educations.map(education => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
@@ -177,7 +177,7 @@ const Resume = () => {
                             ))}
                         </CustomTimeline>
 
-                        <CustomTimeline title={translation.certifications} icon={<CardMembershipIcon />}>
+                        <CustomTimeline title={translation?.certifications} icon={<CardMembershipIcon />}>
                             {resumeData.certifications.map(cerf => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
@@ -246,7 +246,7 @@ const Resume = () => {
                     <Grid container>
                         <Grid item className='section-title mb-30'>
                             <span></span>
-                            <h6 className='section-title-text'>{translation.contactForm}</h6>
+                            <h6 className='section-title-text'>{translation?.contactForm}</h6>
                         </Grid>
                         <form onSubmit={handleSubmit} >
                         <Grid item xs={12}>
@@ -274,7 +274,7 @@ const Resume = () => {
                     <Grid container spacing={2}>
                         <Grid item className='section-title mb-30'>
                             <span></span>
-                            <h6 className='section-title-text'>{translation.contactInformation}</h6>
+                            <h6 className='section-title-text'>{translation?.contactInformation}</h6>
                         </Grid>
 
                         <Grid item xs={12}>
