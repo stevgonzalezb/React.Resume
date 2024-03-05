@@ -61,7 +61,7 @@ const TRANSLATIONS = {
 
 const Resume = () => {
 
-    const { lang } = useParams()    
+    const { lang } = useParams() 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');

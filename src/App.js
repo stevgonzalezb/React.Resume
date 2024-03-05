@@ -24,7 +24,7 @@ const App = () => {
           <Profile/>
         </Grid>
         <Grid item xs>
-            <Router basename="React.Resume" >
+            <Router>
               <div className='main-content containter-shadow'>
               <Switch>
                 <Route path='/:lang/portfolio'>

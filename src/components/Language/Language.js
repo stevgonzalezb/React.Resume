@@ -15,7 +15,7 @@ const LANGUAGES = [
 function onChangeLanguage(lang) {
         
     // Get the current pathname and split it into parts
-    let pathParts = window.location.pathname.split('/')
+    let pathParts = window.location.hash.split('/')
 
     // Replace the language part of the path
     pathParts[1] = lang
