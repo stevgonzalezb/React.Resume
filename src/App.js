@@ -8,7 +8,7 @@ import Portfolio from './pages/Portfolio/Portfolio'
 import Resume from './pages/Resume/Resume'
 //import { ReactNotifications } from 'react-notifications-component'
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom'
 
 import './App.css';
 
