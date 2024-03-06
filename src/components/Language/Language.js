@@ -12,22 +12,12 @@ const LANGUAGES = [
     {lang: 'pt', icon: PortugueseIcon}
 ]
 
-function onChangeLanguage(lang) {
-        
-    // Get the current pathname and split it into parts
-    let pathParts = window.location.hash.split('/')
-
-    // Replace the language part of the path
-    pathParts[1] = lang
-
-    // Join the parts back together into a new path
-    let newPath = pathParts.join('/')
-
-    // Navigate to the new path
-    window.location.href = newPath
-}
-
 const LanguageSelector = ({language}) => {
+
+    //
+    // State
+
+
     let selected = null
     const [expanded, setExpanded] = useState(false)
 
@@ -41,6 +31,32 @@ const LanguageSelector = ({language}) => {
     // Validate language
     if (!selected) selected = LANGUAGES[0]
 
+    //
+    // Handling
+    //
+
+    function onChangeLanguage(lang) {
+        
+        // Get the current pathname and split it into parts
+        let pathParts = window.location.hash.split('/')
+    
+        // Replace the language part of the path
+        pathParts[1] = lang
+    
+        // Join the parts back together into a new path
+        let newPath = pathParts.join('/')
+    
+        // Navigate to the new path
+        window.location.href = newPath
+
+        // Close the language selector
+        setExpanded(!expanded)
+    }
+
+    //
+    // Rendering
+    //
+
     return (
         <div>
             {/* Selected language */}
@@ -49,19 +65,22 @@ const LanguageSelector = ({language}) => {
             </div>
 
             {/* Language selector */}
-            <div style={{
-                position: 'absolute',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '4px',
-            }}>
+            <div>
                 {expanded && (
                     LANGUAGES.map((lang, i) => {
                         if (lang.lang !== selected.lang) {
                             return (
-                                <img src={lang.icon} 
-                                    alt={lang.lang} className='icon' 
-                                    onClick={() => onChangeLanguage(lang.lang)} />
+                                <div style={{
+                                    position: 'absolute',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: '4px',
+                                    bottom: '-10px',
+                                }}>
+                                    <img src={lang.icon} 
+                                        alt={lang.lang} className='icon' 
+                                        onClick={() => onChangeLanguage(lang.lang)} />
+                                </div>
                             )
                         }
                     })
