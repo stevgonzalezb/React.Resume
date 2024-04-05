@@ -42,13 +42,10 @@ const Header = (props) => {
                 <CustomButton text='Hire Me' icon={<TelegramIcon />} link={mailtoText} />
                 </div>
 
-                <div style={{
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
-                padding: '8px'
-                
-                }}> <Language language={lang}/> </div>
+                {/* Languaje icon */}
+                <div style={{padding: '8px'}}> 
+                    <Language language={lang}/> 
+                </div>
 
             </Navbar.Collapse>
         </Navbar>

@@ -2,12 +2,10 @@
     background-color: var(--main-color);
     color: white;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    min-height: 70px;
-    border-radius: 8px;
-    padding: 20px 25px;
+    border-radius: 6px;
+    padding: 16px 16px;
 }
 
 .footer .footer-copyright {

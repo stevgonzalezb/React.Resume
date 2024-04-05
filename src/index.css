@@ -9,10 +9,11 @@ body {
     sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
-  background: #212121 !important;
+  /*background: #3c3c3c !important;
   /* background: #fafafa; */
   overflow-x: hidden !important;
-  background: url('./assets/images/bg.png');
+
+  background: url('./assets/images/bg_dark.png');
 }
 
 code {

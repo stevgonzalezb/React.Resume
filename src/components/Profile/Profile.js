@@ -25,7 +25,7 @@ const CustomTimelineItem = ({title, text, link}) => (
         </Typography>
       ) : (
         <Typography className='timeline-item-text'>
-          <span>{title}:</span> {text}
+          {text}
         </Typography>
       )}
     </TimelineContent>

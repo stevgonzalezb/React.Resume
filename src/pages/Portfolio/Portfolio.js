@@ -44,7 +44,7 @@ const Portfolio = () => {
     )
 
     return (
-        <Grid spacing={1} container className='section pb-45 pt-45'>
+        <Grid spacing={1} container className='section pb-45'>
             {/* Title */}
             <Grid item className='section-title mb-20'>
                 <span></span>

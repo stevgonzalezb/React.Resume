@@ -1,6 +1,6 @@
 /*About section*/
 .about-text{
-    color: darkslategray !important;
+    color: whitesmoke !important;
     font-size: smaller !important;
     line-height: 22px !important;
     white-space: pre-line !important;
@@ -13,11 +13,11 @@
 }
 
 .resume-timeline .timeline-content .timeline-date {
-    color: darkslategray;
+    color: whitesmoke;
 }
 
 .resume-timeline .timeline-content .timeline-description {
-    color: gray;
+    color: whitesmoke;
     font-size: small;
     margin-top: 6px;
     white-space: pre-line !important;

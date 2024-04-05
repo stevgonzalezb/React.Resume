@@ -8,7 +8,7 @@ import  './Language.css'
 // Supported languages
 const LANGUAGES = [
     {lang: 'en', icon: EnglishIcon}, 
-    //{lang: 'es', icon: SpanishIcon}, 
+    {lang: 'es', icon: SpanishIcon}, 
     {lang: 'pt', icon: PortugueseIcon}
 ]
 
@@ -65,24 +65,26 @@ const LanguageSelector = ({language}) => {
             </div>
 
             {/* Language selector */}
-            <div>
+            <div style={{
+                position: 'absolute', 
+                bottom: '-50px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '4px'
+                }}>
                 {expanded && (
-                    LANGUAGES.map((lang, i) => {
-                        if (lang.lang !== selected.lang) {
-                            return (
-                                <div style={{
-                                    position: 'absolute',
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    gap: '4px',
-                                    bottom: '-10px',
-                                }}>
-                                    <img src={lang.icon} 
-                                        alt={lang.lang} className='icon' 
-                                        onClick={() => onChangeLanguage(lang.lang)} />
-                                </div>
-                            )
-                        }
+                    LANGUAGES.map((language, i) => {
+
+                        return (
+                            <>
+                            {language.lang !== selected.lang && 
+                                <img src={language.icon} 
+                                    alt={language.lang} className='icon' 
+                                    style={{cursor: 'pointer'}}
+                                    onClick={() => onChangeLanguage(language.lang)} />
+                            }
+                            </>
+                        )
                     })
                 )}
             </div>

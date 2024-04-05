@@ -123,8 +123,10 @@ const Resume = () => {
     }
 
     return (
-        <>  {/* About */}
-            <Grid container className='section pb-45 pt-45'>
+        <div style={{
+            //background: 'rgba(0, 0, 0, 0.727)'
+        }}>  {/* About */}
+            <Grid container className='section pb-45'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
                     <h6 className='section-title-text'>{translation?.about}</h6>
@@ -216,7 +218,7 @@ const Resume = () => {
             </Grid>*/}
 
             {/* Skills */}
-            <Grid container className='section gray-bg pb-45 p-50'>
+           {/* <Grid container className='section gray-bg pb-45 p-50'>
                 <Grid item xs={12}>
                 <Grid container spacing={3} justify='space-between' >
                 {resumeData.skills.map(skill =>(
@@ -237,12 +239,12 @@ const Resume = () => {
                 </Grid>
                 </Grid>
 
-            </Grid>
+            </Grid>/*}
 
             {/* Contact */}
-            <Grid container spacing={5} className='section pb-45 pt-45'>
+            {/*<Grid container spacing={5} className='section pb-45 pt-45'>*/}
                 {/*Contact Form*/}
-                <Grid item xs={12} lg={7}>
+                {/*<Grid item xs={12} lg={7}>
                     <Grid container>
                         <Grid item className='section-title mb-30'>
                             <span></span>
@@ -267,10 +269,10 @@ const Resume = () => {
                         </Grid>
                         </form>
                     </Grid>
-                </Grid>
+                            </Grid>*/}
 
                 {/*Contact Information*/}
-                <Grid item xs={12} lg={5}>
+                {/*<Grid item xs={12} lg={5}>
                     <Grid container spacing={2}>
                         <Grid item className='section-title mb-30'>
                             <span></span>
@@ -308,9 +310,9 @@ const Resume = () => {
                         </Grid>
                             
                     </Grid>
-                </Grid>
-            </Grid>
-        </>
+                                </Grid>*/}
+            {/*</Grid>*/}
+        </div>
     )
 }
 
