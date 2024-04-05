@@ -45,6 +45,21 @@ function Profile() {
         </figure>
 
         <div className='profile-information'>
+          <div className='section-title'>
+            <span style={{
+              maxWidth: '100px',
+            }}></span>
+            <h6 className='section-title-text' style={{
+              fontSize: 'large',
+              fontWeight: 'bold',
+            
+            }}>About me...</h6>
+          </div>
+
+          <Typography variant='body2' className='about'>{resumeData.about}</Typography>
+        </div>  
+
+        {/*<div className='profile-information'>
             <CustomTimeline icon={<PersonOutlineIcon />}>
               <CustomTimelineItem title='Name' text={resumeData.name} />
               <CustomTimelineItem title='Title' text={resumeData.title} />
@@ -57,7 +72,7 @@ function Profile() {
             <div className='button-container' >
               <CustomButton text={'Download CV'} icon={<GetApp />} link={resumeData.resume} />
             </div>
-        </div>
+            </div>*/}
     </div>
   );
 }

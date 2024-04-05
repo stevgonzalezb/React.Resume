@@ -40,10 +40,21 @@
 
 /*Information*/
 
+
+
 .profile-information {
     top: 0;
     left: 0;
-    margin: -44px 10px 30px;
+    color: whitesmoke;
+    text-align: justify;
+    padding: 0 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about {
+    font-size: x-small;
 }
 
 .profile-information .timeline .timeline-content {

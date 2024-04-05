@@ -126,7 +126,7 @@ const Resume = () => {
         <div style={{
             //background: 'rgba(0, 0, 0, 0.727)'
         }}>  {/* About */}
-            <Grid container className='section pb-45'>
+            {/*<Grid container className='section pb-45'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
                     <h6 className='section-title-text'>{translation?.about}</h6>
@@ -134,15 +134,15 @@ const Resume = () => {
                 <Grid item xs={12}>
                     <Typography variant='body2' className='about-text' >{resumeData.about}</Typography>
                 </Grid>
-            </Grid>
+            </Grid>*/}
 
             {/* Education and Experiences */}
-            <Grid container className='section'>
+            {/*<Grid container className='section'>
                 <Grid item className='section-title mb-30'>
                     <span></span>
                     <h6 className='section-title-text'>{translation?.workExperience}</h6>
                 </Grid>
-            </Grid>
+            </Grid>*/}
 
             <Grid item xs={12} className='section'>
                 <Grid container className='resume-timeline' >
