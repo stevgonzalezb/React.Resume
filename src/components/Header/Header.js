@@ -31,8 +31,8 @@ const Header = (props) => {
                 display: 'flex',
             }}>
                 <Nav className='header-left' >
-                    <Nav.Link as={NavLink} to={`/${lang}`} className={pathName === '/' ? 'header-link-active' : 'header-link'}>Resume</Nav.Link>
-                    <Nav.Link as={NavLink} to={`/${lang}/portfolio`} className={pathName === '/portfolio' ? 'header-link-active' : 'header-link'}>Portfolio</Nav.Link>
+                    <Nav.Link as={NavLink} to={`/${lang}`} className={pathName === `/${lang}` ? 'header-link-active' : 'header-link'}>Resume</Nav.Link>
+                    <Nav.Link as={NavLink} to={`/${lang}/portfolio`} className={pathName === `/${lang}/portfolio` ? 'header-link-active' : 'header-link'}>Portfolio</Nav.Link>
                 </Nav>
 
                 <div className='header-right'>

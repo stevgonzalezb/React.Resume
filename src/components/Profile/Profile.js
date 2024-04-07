@@ -4,11 +4,16 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import GetApp from '@material-ui/icons/GetApp';
+import showdown from "showdown"
+import showdownHighlight from "showdown-highlight"
 
 import profilePhoto from '../../assets/images/profile_photo.jpg';
-import resumeData from '../../utils/resumeData.js';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
-import CustomButton from '../Button/Button'
+import { useParams } from 'react-router-dom';
+
+import enData from '../../data/en'
+import ptData from '../../data/pt'
+import esData from '../../data/es'
 
 import './Profile.css'
 
@@ -32,7 +37,32 @@ const CustomTimelineItem = ({title, text, link}) => (
   </TimelineItem>
 );
 
+// Create markdown converter.
+const converter = new showdown.Converter({
+  extensions: [showdownHighlight({
+      pre: false,
+      auto_detection: true
+  })],
+  tables: true,
+  simplifiedAutoLink: true,
+  smoothLivePreview: true,
+  simpleLineBreaks: true,
+  tasklists: true,
+});
+
 function Profile() {
+
+    const { lang } = useParams()
+
+    // Assign the data to the resumeData variable
+    let resumeData = null
+    if (lang === 'en') resumeData = enData
+    if (lang === 'pt') resumeData = ptData
+    if (lang === 'es') resumeData = esData
+    
+    // Check if the language is supported
+    if (!resumeData) resumeData = enData
+
   return (
     <div className='profile containter-shadow'>
         <div className='profile-name'>
@@ -43,7 +73,7 @@ function Profile() {
         <figure className='profile-image'>
             <img src={profilePhoto} alt=""></img>
         </figure>
-
+        
         <div className='profile-information'>
           <div className='section-title'>
             <span style={{
@@ -52,11 +82,14 @@ function Profile() {
             <h6 className='section-title-text' style={{
               fontSize: 'large',
               fontWeight: 'bold',
-            
             }}>About me...</h6>
           </div>
 
-          <Typography variant='body2' className='about'>{resumeData.about}</Typography>
+          {/*<Typography variant='body2' className='about'>{resumeData.about}</Typography>*/}
+          <div style={{ fontSize: '13px' }}>
+            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(resumeData.about) }} />
+          </div>
+        
         </div>  
 
         {/*<div className='profile-information'>

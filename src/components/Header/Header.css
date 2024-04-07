@@ -23,8 +23,10 @@
 
 
 .header .header-link-active {
-    font-weight: 500;
-    color: var(--main-color) !important;
+    padding: 4px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: whitesmoke !important;
 }
 
 .header .header-home {
