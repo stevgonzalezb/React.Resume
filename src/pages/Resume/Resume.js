@@ -161,7 +161,11 @@ const Resume = () => {
                             ))}                            
                         </CustomTimeline>
                         {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>{translation?.showLess}</Link> : 
-                                <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(true)}}>{translation?.showMore}</Link>}
+                                <Link Component="button" variant="inherit" style={{
+                                    cursor: 'pointer',
+                                    padding: '8px',
+                                    color: 'white',
+                                }} onClick={() => {setShowMore(true)}}>{translation?.showMore}</Link>}
                     </Grid>
 
                     {/* Education */}
