@@ -11,6 +11,9 @@ import CustomButton from '../../components/Button/Button'
 import emailjs from 'emailjs-com';
 //import { store } from 'react-notifications-component';
 import Link from '@material-ui/core/Link'
+import { Modal } from '@material-ui/core';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
 import { useParams } from 'react-router-dom';
 
 
@@ -149,7 +152,7 @@ const Resume = () => {
                     {/* Experiences */}
                     <Grid item sm={12} md={6}>
                         <CustomTimeline title={translation?.workExperience} icon={<WorkIcon />}>
-                            {resumeData.experiences.slice(0, showMore ? resumeData.experiences.length : 2).map(experience => (
+                            {resumeData.experiences.slice(0, 2).map(experience => (
                                 <TimelineItem>
                                     <CustomTimelineSeparator/>
                                     <TimelineContent className='timeline-content' >
@@ -160,12 +163,11 @@ const Resume = () => {
                                 </TimelineItem>
                             ))}                            
                         </CustomTimeline>
-                        {showMore ? <Link Component="button" variant="inherit" style={{cursor: 'pointer'}} onClick={() => {setShowMore(false)}}>{translation?.showLess}</Link> : 
-                                <Link Component="button" variant="inherit" style={{
+                        <Link Component="button" variant="inherit" style={{
                                     cursor: 'pointer',
                                     padding: '8px',
                                     color: 'white',
-                                }} onClick={() => {setShowMore(true)}}>{translation?.showMore}</Link>}
+                                }} onClick={() => {setShowMore(true)}}>{translation?.showMore}</Link>
                     </Grid>
 
                     {/* Education */}
@@ -198,6 +200,35 @@ const Resume = () => {
                     </Grid>
                 </Grid>
             </Grid>
+
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}
+                open={showMore}
+                onClose={() => setShowMore(false)}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                timeout: 500,
+                }}
+            >
+                <Fade in={showMore}>
+                <div style={{
+                    background: 'white',
+                    color: 'black',
+                    padding: '20px',
+                    borderRadius: '10px',
+                }}>
+                    <h2 id="transition-modal-title">Transition modal</h2>
+                    <p id="transition-modal-description">react-transition-group animates me.</p>
+                </div>
+                </Fade>
+            </Modal>
 
             {/* Services */}
             {/*<Grid container className='section pb-45 pt-45'>

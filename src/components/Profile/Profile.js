@@ -7,7 +7,7 @@ import GetApp from '@material-ui/icons/GetApp';
 import showdown from "showdown"
 import showdownHighlight from "showdown-highlight"
 
-import profilePhoto from '../../assets/images/profile_photo.jpg';
+import profilePhoto from '../../assets/images/profile_photo.webp';
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
 import { useParams } from 'react-router-dom';
 
