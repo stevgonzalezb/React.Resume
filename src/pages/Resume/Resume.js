@@ -219,13 +219,29 @@ const Resume = () => {
             >
                 <Fade in={showMore}>
                 <div style={{
-                    background: 'white',
-                    color: 'black',
+                    background: 'whitesmoke',
+                    backdropFilter: 'blur(5px)',
+
+                    color: '#545454',
                     padding: '20px',
+                    maxHeight: '80vh',
+                    maxWidth: '80vw',
+                    overflowY: 'scroll',
                     borderRadius: '10px',
+
                 }}>
-                    <h2 id="transition-modal-title">Transition modal</h2>
-                    <p id="transition-modal-description">react-transition-group animates me.</p>
+                    <CustomTimeline title={translation?.workExperience} icon={<WorkIcon />}>
+                        {resumeData.experiences.map(experience => (
+                            <TimelineItem>
+                                <CustomTimelineSeparator/>
+                                <TimelineContent className='timeline-content' >
+                                    <Typography className='timeline-title'>{experience.title}</Typography>
+                                    <Typography variant='caption' className='timeline-date'>{experience.date}</Typography>
+                                    <Typography variant='body2' className='timeline-description'>{experience.description}</Typography>
+                                </TimelineContent>
+                            </TimelineItem>
+                        ))}                            
+                    </CustomTimeline>
                 </div>
                 </Fade>
             </Modal>
